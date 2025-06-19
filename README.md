@@ -1,6 +1,6 @@
 # leetcode | Ebod's solutions
 
-This repository contains my solutions to leetcode questions I completed successfully.
+This repository contains my solutions to some fun leetcode questions 🧩
 
 ## License
 
