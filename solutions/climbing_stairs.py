@@ -1,5 +1,5 @@
 # lc70: climbing stairs
-# see: https://leetcode.com/problems/climbing-stairs/submissions/1687834347/
+# see: https://leetcode.com/problems/climbing-stairs/submissions
 
 class Solution:
     def climbStairs(self, n: int) -> int:
@@ -18,11 +18,9 @@ class Solution:
             2:2
         }
         def calcSteps(n: int) -> int:
-            if n in cache:
-                return cache[n]
-            else:
+            if n not in cache:
                 cache[n] = calcSteps(n - 1) + calcSteps(n - 2)
-                return cache[n]
+            return cache[n]
         return calcSteps(n)
 
 
