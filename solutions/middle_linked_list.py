@@ -15,12 +15,6 @@ class Solution:
         # 1->2->null, therefore, middle is second
         # 1->null, return head
         # 1->2->3->null , second ptr sees null, return first ptr
-        if not head.next:
-            return head
-
-        if not head.next.next:
-            return head.next
-
         p1, p2 = head, head
         while p2:
             if not p2.next:
